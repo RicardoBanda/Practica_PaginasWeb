@@ -6,6 +6,7 @@ body {
     justify-items: center;
     grid-template-columns: 3fr 3fr;
     grid-template-areas: "header header"
+	                      "footer footer"
 	                      
                          
                          
@@ -70,6 +71,8 @@ header {
 	list-style: none;
 }
 
+/* Esto es del menú */
+
 .menu > li {
 	position: relative;
 	display: inline-block;
@@ -98,7 +101,7 @@ header {
 	font-size: 30px;
 }
 
-/* Submenu */
+/* Esto es del Submenu */
 .submenu {
 	position: absolute;
 	background: #D5EEBB;
@@ -126,13 +129,12 @@ header {
 	font-size: 30px;
 }
 
-/* Footer */
+/*Esto es del Footer */
 footer {
-	max-width: 3000px;
+	grid-area: footer;
 	min-height: 50px;
 	background: #FD6F96;
 	text-align: center;
-	box-sizing: border-box;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 15px;
 	padding: 20px;
